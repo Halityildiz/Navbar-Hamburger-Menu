@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background: #dde3e7;
+  line-height: 1.5;
+  font-size: 1rem;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+nav {
+  background: #fff;
+
+}
+
+.nav-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+img {
+  display: block;
+  height: 60px;
+  border-radius: 20%;
+  background-color: #617d98;
+}
+img:hover{
+  background-color: #f13303;
+  transition: all 0.5s linear;
+}
+
+.navBar {
+  font-size: 1.5rem;
+  color: #617d98;
+  background: transparent;
+  border-color: transparent;
+  transition: all 0.3s linear;
+  cursor: pointer;
+}
+
+.navBar:hover {
+  color: #0b283d;
+  transform: rotate(-180deg);
+}
+
+.links {
+  height: 0;
+  overflow: hidden;
+  text-align: center;
+  transition: all 0.3s linear;
+}
+
+.links a {
+  color: #1a6aa2;
+  font-size: 1.3rem;
+  text-transform: capitalize;
+  letter-spacing: 0.125rem;
+  margin-bottom: 10px;
+  display: block;
+  padding: 0.5rem 1rem;
+  transition: all 0.3s linear;
+}
+
+.links a:hover {
+  color: orangered;
+  padding-left: 1.5rem;
+}
+
+.social-icons {
+  display: none;
+}
+
+.show-links {
+  height: 15rem;
+}
+
+.show-social {
+  display: flex;
+  justify-content: space-around;
+  width: 25%;
+  margin: 0 auto;
+}
+
+.show-social a {
+  color: #617d98;
+  transition: all 0.3s linear;
+  font-size: 1.3rem;
+}
+
+.show-social a:hover {
+  color: lightblue;
+}
+
+@media screen and (min-width: 720px) {
+  .nav-center {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+  }
+  .nav-header {
+    padding: 0;
+  }
+  .navBar {
+    display: none;
+  }
+  .links {
+    height: auto;
+    display: flex;
+  }
+  .links a {
+    margin: 0 0.5rem;
+  }
+  .links a:hover {
+    background: transparent;
+  }
+  .social-icons {
+    display: flex;
+  }
+  .social-icons a {
+    margin: 0 0.5rem;
+    color: #617d98;
+    transition: all 0.3s linear;
+    font-size: 1.3rem;
+  }
+  .social-icons a:hover {
+    color: #f13303;
+  }
+}
